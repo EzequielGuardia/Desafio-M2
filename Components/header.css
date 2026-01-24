@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    max-height: 115px;
+}
+
+.barra svg{
+    height: 60px;
+    width: 60px;
+    margin: 10px 10px;
+}
+.ventana{
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    border: solid;
+    border-radius: 7px;
+    display: none;
+}
+
+.abrir__ventana{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.ventana__cerrar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.ventana__contenido{
+    margin: 40px auto;
+    
+}
+
+.ventana {
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Cubre toda la pantalla */
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: black;
+    z-index: 100;
+}
+
+/* Estilos para la lista dentro de la ventana */
+.ventana__contenido {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.ventana__contenido li a {
+    color: white ; /* Forzamos color negro sobre el fondo blanco */
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}

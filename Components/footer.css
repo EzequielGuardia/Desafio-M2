@@ -1,0 +1,77 @@
+/* Contenedor principal del footer */
+.custom-footer {
+  background-color: #0f1114; /* Fondo casi negro */
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 400px; /* Ajusta según el ancho que desees */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navegación con iconos */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-nav a {
+  color: #d1d1d1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: white;
+}
+
+/* Redes Sociales */
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #1a1e24; /* Color de fondo del círculo */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8fa3b0;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.social-circle:hover {
+  transform: scale(1.1);
+  background-color: #252a33;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #7a7a7a;
+}
