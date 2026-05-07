@@ -15,6 +15,7 @@ body{
   flex-direction: column;
   gap: 5px; /* separación entre cada palabra */
   text-align: center; /* centrar */
+  align-items: center; /* centrar verticalmente */
   margin-top: 50px;
 
 }
@@ -30,18 +31,15 @@ body{
   color: white;
 }
 
-.soy {
+.nombre {
   color: #00d1c7;
 }
 
-.marce {
-  color: #00b5d8;
-}
-
-.Bienvenida svg{
+.Bienvenida img{
     width: 196px;
     margin-top: 30px;
     margin-bottom: 30px;
+
 }
 
 .sobre-mi{
