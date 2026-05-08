@@ -34,9 +34,9 @@ async function main(){
             <div class="titulo">
             <h1 class="saludo">${entry.saludo} </h1>
             <h1 class="nombre">${entry.nombre}</h1>
+            </div>
             <div
             class="logo"><img src="https:${urlDeLaImagen}" alt="Logo">
-            </div>
             </div>`
         
     } catch (error) {
