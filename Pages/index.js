@@ -84,7 +84,8 @@ try{
     serviciosSection.innerHTML = `
 
         <h2 class="main-title">Mis <span>servicios</span></h2>
-    
+
+        <div class="services-container__cards">
         <div class="service-card">
 
             <div class="image-placeholder web-dev">
@@ -128,6 +129,8 @@ try{
             <h3>${entry3.servicio3}</h3>
 
             <p>${entry3.info3}</p>
+
+        </div>
 
         </div>
     `

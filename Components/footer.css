@@ -75,3 +75,13 @@
   font-size: 14px;
   color: #7a7a7a;
 }
+
+
+
+
+@media (min-width: 768px) {
+  .footer-nav {
+    flex-direction: row;
+    gap: 70px;
+  }
+}
