@@ -1,6 +1,5 @@
 async function main(){
 
-    console.log("El script cargó correctamente");
     const navegador = document.querySelector(".navegador")
     nav(navegador)
 
