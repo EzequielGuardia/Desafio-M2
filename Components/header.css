@@ -6,7 +6,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #0f1114;
     max-height: 115px;
 }
 
@@ -22,8 +22,6 @@ body{
     left: 0px;
     bottom: 0px;
     top: 0px;
-    border: solid;
-    border-radius: 7px;
     display: none;
 }
 
@@ -68,4 +66,33 @@ body{
     text-decoration: none;
     display: block;
     padding: 10px;
+}
+
+@media (min-width: 768px) {
+    
+    .abrir__ventana, 
+    .ventana__cerrar {
+        display: none;
+    }
+
+    .ventana {
+        display: flex !important; /* Forzamos que se vea */
+        position: static;         /* Quita el "fixed" que cubre toda la pantalla */
+        height: auto;
+        width: auto;
+        background-color: transparent; /* O el color que prefieras para la barra */
+        flex-direction: row;      /* Alinea los items en horizontal */
+    }
+
+    .ventana__contenido {
+        display: flex;
+        flex-direction: row;      /* Los <li> se ponen uno al lado del otro */
+        margin: 0;
+        padding-right: 20px;
+    }
+    
+    .ventana__contenido li a{
+
+    font-size: 18px;
+    }
 }

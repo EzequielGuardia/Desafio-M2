@@ -16,10 +16,10 @@ function nav(El){
     <div class="ventana" style="display: none;">
     <button class="ventana__cerrar">Cerrar</button>
     <ul class="ventana__contenido">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./portafolio.html">Portfolio</a></li>
+        <li><a href="./servicios.html">Servicios</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
     </ul>
     </div>`
 

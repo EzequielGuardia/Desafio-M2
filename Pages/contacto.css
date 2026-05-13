@@ -1,0 +1,60 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+
+    form .main-title {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+
+}
+
+.caja-form{
+    width: 75%;
+    padding: 25px 0;
+
+    }
+
+    @media (min-width: 768px) {
+    
+    form {
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 150px 100px;
+
+    }
+    
+    .caja-form {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: none;
+
+    }
+
+    form .main-title {
+        padding: 0px
+
+    }
+    .inputs-superiores {
+        display: flex;
+        gap: 20px; /* Espacio entre Nombre y Email */
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: space-around; /* Asegura que los campos se separen */
+        
+    }
+
+    .field {
+        width: 100%;
+    }
+}

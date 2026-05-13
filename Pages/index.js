@@ -8,6 +8,48 @@ async function main(){
 
 
 
+    const formulario = document.querySelector("#formulario");
+        
+    formulario.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const nombre = document.querySelector("#nombre").value;
+        const email = document.querySelector("#email").value;
+        const mensaje = document.querySelector("#mensaje").value;
+
+        const urlForm = "https://apx.school/api/utils/email-to-student";
+
+        const data = {
+            to: email,
+            subject: `Mensaje de ${nombre}`,
+            message: mensaje
+        };
+
+        fetch(urlForm, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+
+        })
+
+        .then(response => {
+        return response.json()
+        })
+        .then(result => {
+            console.log("Éxito:", result);
+            alert("Mensaje enviado correctamente");
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    
+});
+    
+
+
+
     const SPACE_ID = "tsa59i96jrtd";
     const ACCESS_TOKEN = "JYgZGcLPqsEkIopSE2QWRj2qwsPX1IG6nnkWdf3VGp4";
     const CONTENT_TYPE = "seccionBienvenida";
@@ -140,5 +182,6 @@ try{
     console.error("Error fetching data:", error);
 
 }
-}
-main();
+    }
+
+main()
